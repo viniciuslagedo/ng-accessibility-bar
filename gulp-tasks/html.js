@@ -8,10 +8,17 @@ const gulp = require('gulp'),
 // Task To move and minify html files
 gulp.task('html', () => {
     return gulp
-        .src([config.assets.htmls, '!**/.index.html'])
+        .src([`${config.paths.src}/index.html`])
         .pipe(htmlmin({collapseWhitespace: true, minifyCSS: true}))
-        .pipe(templateCache('ng-accessibility-bar.templates.js', {
-            module: 'ng-accessibility-bar'
-        }))
         .pipe(gulp.dest(global.pathDestination.path));
+});
+
+gulp.task('template-cache', () => {
+    return gulp
+        .src([`${config.paths.src}/${config.projectModule}.template.html`])
+        .pipe(htmlmin({collapseWhitespace: true, minifyCSS: true}))
+        .pipe(templateCache(`${config.projectModule}.templates.js`, {
+            module: config.projectModule
+        }))
+        .pipe(gulp.dest(config.paths.src));
 });
