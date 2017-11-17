@@ -74,7 +74,7 @@ Make some customizations with attributes
 |font-adjust-min-size|Define a custom minimum size for font adjust|integer|16|
 |font-adjust-increment-rate|Define a custom increment rate for font adjust|integer|2|
 |libras|Show and hide buttons for LIBRAS|boolean|true|
-|title|Define A custom title for bar|string|Acessibilidade:|
+|title|Define a custom title for bar|string|Acessibilidade:|
 
 ## Authors
 - [Lucas Stoque](https://github.com/stoque)
