@@ -79,3 +79,4 @@ Make some customization with attributes
 ## Authors
 - [Lucas Stoque](https://github.com/stoque)
 - [Vinícius Lagêdo](https://github.com/viniciuslagedo)
+- [Marcelo Brito](https://github.com/marcelobritonet)
