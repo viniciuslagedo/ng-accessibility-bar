@@ -9,7 +9,6 @@ gulp.task('clean', () => {
     return del(global.pathDestination.path);
 });
 
-// Task to delete the folder js inside /src/assets to constants
-gulp.task('clean:js', () => {
-    return del(`${config.paths.assets}/js`);
+gulp.task('clean:templates', () => {
+    return del(`${config.assets.templates}`);
 });
