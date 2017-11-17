@@ -9,6 +9,7 @@ const paths = {
 module.exports = {
     assets: {
         htmls: `${paths.src}/**/*.html`,
+        templates: `${paths.src}/*.templates.js`,
         js: `${paths.src}/js/**/*`,
         stylesBundles: `${paths.src}/*.sass`,
         stylesVendors: [
@@ -16,6 +17,7 @@ module.exports = {
         scriptsBundles: [
             `${paths.src}/ng-accessibility-bar.module.js`,
             `${paths.src}/*.js`,
+            `${paths.src}/*.templates.js`,
             `!${paths.src}/*.spec.js`
         ],
         scriptsVendors: [
