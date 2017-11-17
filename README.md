@@ -42,7 +42,7 @@ angular.module('application', [
 
 ### Use
 
-Add component where you want
+Add component wherever you want
 
 ```html
 <accessibility-bar></accessibility-bar>
