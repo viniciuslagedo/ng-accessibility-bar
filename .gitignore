@@ -1,0 +1,18 @@
+# dependencies and gulp/build folders
+dist/
+.dev/
+.hmg/
+.prod/
+src/assets/js
+
+# packages folders
+node_modules/
+
+# test and coverage files
+coverage/
+tests/coverage/
+tests/cobertura.xml
+tests.xml
+
+# IDE files
+.vscode/

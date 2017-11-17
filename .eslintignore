@@ -1,0 +1,10 @@
+bower_components/
+dist/
+.dev/
+.hmg/
+.hmg-interno/
+.prod/
+node_modules/
+src/assets/
+src/interno/
+coverage/
