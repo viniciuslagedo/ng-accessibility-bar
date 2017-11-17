@@ -11,12 +11,13 @@ gulp.task('build:dev', (done) => {
     runSequence(
         'clean',
         'lint',
+        'html',
+        'template-cache',
         'styles:bundles',
         'styles:vendors',
         'scripts:bundles',
         'scripts:vendors',
-        'html',
-        'clean:js',
+        'clean:templates',
         done
     );
 });
@@ -28,10 +29,10 @@ gulp.task('build:prod', (done) => {
     runSequence(
         'clean',
         'lint',
+        'template-cache',
         'styles:bundles',
         'scripts:bundles',
-        'html',
-        'clean:js',
+        'clean:templates',
         done
     );
 });
