@@ -17,7 +17,7 @@ gulp.task('scripts:bundles', () => {
     return gulp
         .src(config.assets.scriptsBundles)
         .pipe(sourcemaps.init())
-        .pipe(concat('ng-accessibility-bar.js'))
+        .pipe(concat(`${config.projectModule}.js`))
         .pipe(ngAnnotate())
         .pipe(gulpIf(global.pathDestination === config.prod, uglify()))
         .pipe(sourcemaps.write('.'))
