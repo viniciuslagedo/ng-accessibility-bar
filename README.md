@@ -7,7 +7,7 @@ Accessibility bar component for Angular 1.6
 
 #### Features
 - Buttons to Increment/Decrement font size
-- Button to toggle high contrast version based on body class
+- Button to toggle high-contrast version based on body class
 - Button to LIBRAS (Língua brasileira de sinais)
 
 ## Quick Start
@@ -26,7 +26,7 @@ Add script with minified file
 <script type="text/javascript" src="node_modules/ng-accessibility-bar/dist/ng-accessibility-bar.js"></script>
 ```
 
-(optional) Add link for css file
+_(optional)_ Add link for css file
 
 ```html
 <link rel="stylesheet" href="node_modules/ng-accessibility-bar/dist/ng-accessibility-bar.css">
@@ -49,7 +49,7 @@ Add component wherever you want
 ```
 
 ## Options
-Make some customization with attributes
+Make some customizations with attributes
 
 ```html
 <accessibility-bar
@@ -68,13 +68,13 @@ Make some customization with attributes
 |Key|Description|Type|Default|
 |---|---|---|---|
 |contrast|Show and hide contrast button|boolean|true|
-|contrast-class|Define custom class name for high contrast version|string|color-inverter|
+|contrast-class|Define a custom class name for high contrast version|string|color-inverter|
 |font-adjust|Show and hide buttons for font adjust|boolean|true|
-|font-adjust-max-size|Define custom maximum size for font adjust|integer|20|
-|font-adjust-min-size|Define custom minimum size for font adjust|integer|16|
-|font-adjust-increment-rate|Define custom increment rate for font adjust|integer|2|
-|libras|Show and hide buttons for libras|boolean|true|
-|title|Define custom mititle for bar|string|Acessibilidade:|
+|font-adjust-max-size|Define a custom maximum size for font adjust|integer|20|
+|font-adjust-min-size|Define a custom minimum size for font adjust|integer|16|
+|font-adjust-increment-rate|Define a custom increment rate for font adjust|integer|2|
+|libras|Show and hide buttons for LIBRAS|boolean|true|
+|title|Define A custom title for bar|string|Acessibilidade:|
 
 ## Authors
 - [Lucas Stoque](https://github.com/stoque)
