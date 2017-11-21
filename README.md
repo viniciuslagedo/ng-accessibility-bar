@@ -45,14 +45,14 @@ angular.module('application', [
 Add component wherever you want
 
 ```html
-<accessibility-bar></accessibility-bar>
+<ng-accessibility-bar></ng-accessibility-bar>
 ```
 
 ## Options
 Make some customizations with attributes
 
 ```html
-<accessibility-bar
+<ng-accessibility-bar
   contrast="false"
   contrast-class="hight-contrast"
   font-adjust="true"
@@ -62,7 +62,7 @@ Make some customizations with attributes
   libras="false"
   title="Accessibility:"
 >
-</accessibility-bar>
+</ng-accessibility-bar>
 ```
 
 |Key|Description|Type|Default|
