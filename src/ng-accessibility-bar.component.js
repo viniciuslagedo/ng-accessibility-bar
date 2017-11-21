@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('ng-accessibility-bar')
-        .component('accessibilityBar', AccessibilityBar());
+        .component('ngAccessibilityBar', AccessibilityBar());
 
     function AccessibilityBar() {
         return {
