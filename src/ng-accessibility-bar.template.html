@@ -21,17 +21,17 @@
 
     <div class="list">
         <div class="item" ng-if="vm.config.fontAdjust.visibility">
-            <button class="action" type="button" ng-click="vm.decreaseFontSize()">
+            <button class="action" type="button" ng-click="vm.decreaseFontSize()" ng-keypress="vm.decreaseFontSize()">
                 A-
             </button>
         </div>
         <div class="item" ng-if="vm.config.fontAdjust.visibility">
-            <button class="action" type="button" ng-click="vm.increaseFontSize()">
+            <button class="action" type="button" ng-click="vm.increaseFontSize()" ng-keypress="vm.increaseFontSize()">
                 A+
             </button>
         </div>
         <div class="item" ng-if="vm.config.contrast.visibility">
-            <button class="action" type="button" ng-click="vm.setContrast(vm.config)">
+            <button class="action" type="button" ng-click="vm.setContrast(vm.config)" ng-keypress="vm.setContrast(vm.config)">
                 <svg class="icon">
                     <use xlink:href="#icon-contrast"></use>
                 </svg>
