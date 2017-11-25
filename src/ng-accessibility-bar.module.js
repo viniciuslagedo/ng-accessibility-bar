@@ -2,7 +2,5 @@
     'use strict';
 
     angular
-        .module('ng-accessibility-bar', [
-            'ngTouch'
-        ]);
+        .module('ng-accessibility-bar', []);
 }());
