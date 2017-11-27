@@ -75,7 +75,7 @@
         }
 
         function _getDefaultWindowFontSize() {
-            var fontSize = window.getComputedStyle(document.body).getPropertyValue('font-size');
+            var fontSize = window.getComputedStyle(document.documentElement).getPropertyValue('font-size');
             fontSize = fontSize.replace(/\D/g, '');
             fontSize = +fontSize;
 
