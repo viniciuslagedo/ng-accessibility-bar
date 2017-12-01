@@ -80,3 +80,7 @@ Make some customizations with attributes
 - [Lucas Stoque](https://github.com/stoque)
 - [Vinícius Lagêdo](https://github.com/viniciuslagedo)
 - [Marcelo Brito](https://github.com/marcelobritonet)
+
+
+## Contribuiting
+Check our [CONTRIBUTING](https://github.com/viniciuslagedo/ng-accessibility-bar/blob/master/CONTRIBUTING.md) file.

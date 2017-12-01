@@ -1,50 +1,58 @@
-# Contribuição
-Padrão de processo usado para contribuir com o projeto
+# Contributing
+Default process to contributing with project
 
-### Nova funcionalidade ou melhoria
+### New feature or improvement
 
-1. Criar a branch saindo da develop seguindo o [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
+1. Create a new branch from develop following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) rules
 
 ```bash
 git checkout -b branch-type/name
 ```
 
-2. Commit e push
+2. Commit and Push files
 
-3. Criar Pull Request para develop
+3. Create a new Pull Request for develop
 
-### Resolução de bugs
+4. Waiting approves or new comments on pull request
 
-1. Criar a branch saindo da master seguindo o [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
+### New bugs solution
+
+1. Create a new branch from master following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) rules
 
 ```bash
 git checkout -b hotfix/name
 ```
 
-2. Commit e push
+2. Commit and Push files
 
-3. Criar Pull Request para master
+3. Create a new Pull Request for master
 
-## Apenas colaboradores
+4. Waiting approves or new comments on pull request
 
-### Nova Versão
+## Only for collaborators
 
-1. Criar a branch saindo da develop seguindo o [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) e a versão.
+### New version/release
+
+1. Create a new branch from develop following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) and [SEMVER](https://semver.org/) rules
 
 ```bash
 git checkout -b release/v.X.X.X
 ```
 
-2. Atualizar a versão no arquivo package json
+2. Update version of project on package.json file
 
-3. Gerar uma nova dist através gulp
+
+3. Make a a new build of dist using *gulp*
+
 
 ```bash
 gulp build:prod
 ```
 
-4. Criar o Pull Request diretamente para master
+4. Create a new Pull Request for master
 
-5. Após aprovado, gerar tag/release no github e publicar no npm
+5. Waiting approves or new comments on pull request
 
-6. Criar merge da master para develop
+6. After pull request approves, create a new tag/release on github and publish the repository on [NPM](https://www.npmjs.com/)
+
+7. For finish, make a merge from master to develop
