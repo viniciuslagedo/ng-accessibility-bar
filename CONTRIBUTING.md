@@ -52,6 +52,6 @@ gulp build:prod
 
 5. Wait for approbation or new comments about your pull request.
 
-6. After approving, create a new git-tag and release-branch on github and publish whole repository, including the dist folder, on [NPM](https://www.npmjs.com/) services.
+6. After approving, create a new git-tag and release-markup on github and publish whole repository, including the dist folder, on [NPM](https://www.npmjs.com/) services.
 
-7. Then make a merge from develop-branch to master-branch
+7. Then make a merge from master-branch to develop-branch
