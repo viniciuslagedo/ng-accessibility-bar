@@ -20,7 +20,7 @@
     "high contrast"
   ],
   "author": "Lucas Stoque and Vinícius Lagêdo",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/viniciuslagedo/ng-accessibility-bar",
   "devDependencies": {
     "angular": "^1.6.4",
