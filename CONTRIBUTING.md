@@ -29,7 +29,7 @@ git checkout -b hotfix/name
 
 4. Wait for approbation or new comments about your pull request.
 
-## Only for collaborators
+## Only for contributors
 
 ### New version/release
 
