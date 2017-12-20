@@ -68,6 +68,16 @@
             }
         }
 
+        function _switchClass(element, oldClass, newClass) {
+            var $element = document.querySelector(element);
+            
+            if ($element.classList.contains(oldClass)) {
+                $element.classList.remove(oldClass);
+            }
+
+            $element.classList.add(newClass);
+        }
+
         function _verifyContrast(config) {
             if (localStorage.getItem('accessibility-contrast') === 'true' && config.contrast.visibility) {
                 setContrast(config);
@@ -84,6 +94,8 @@
 
         function _adjustFontSize(operator) {
             var $html = document.querySelector('html'),
+                prefixFontClassName = 'accessibility-font-',
+                currentFontClassName = prefixFontClassName + defaultFontSize,
                 isInFontSizeLimit;
 
             if (operator === '-') {
@@ -93,8 +105,14 @@
             }
 
             if (isInFontSizeLimit) {
-                operator === '+' ? defaultFontSize += vm.config.fontAdjust.incrementRate : defaultFontSize -= vm.config.fontAdjust.incrementRate;
+                if (operator === '+') {
+                    defaultFontSize += vm.config.fontAdjust.incrementRate;
+                } else {
+                    defaultFontSize -= vm.config.fontAdjust.incrementRate;
+                }
+
                 $html.setAttribute('style', 'font-size: ' + defaultFontSize + 'px;');
+                _switchClass('html', currentFontClassName, prefixFontClassName + defaultFontSize);
             }
         }
 
