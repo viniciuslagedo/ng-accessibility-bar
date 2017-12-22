@@ -112,7 +112,7 @@
                 }
 
                 $html.setAttribute('style', 'font-size: ' + defaultFontSize + 'px;');
-                _switchClass('html', currentFontClassName, prefixFontClassName + defaultFontSize);
+                _switchClass('body', currentFontClassName, prefixFontClassName + defaultFontSize);
             }
         }
 
