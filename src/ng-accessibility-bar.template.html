@@ -17,7 +17,7 @@
 </svg>
 
 <div class="accessibility-bar-wrapper">
-    <span class="text">{{ vm.config.title }}</span>
+    <span class="text" ng-if="vm.config.title.visibility">{{ vm.config.title.value }}</span>
 
     <div class="list">
         <div class="item" ng-if="vm.config.fontAdjust.visibility">
