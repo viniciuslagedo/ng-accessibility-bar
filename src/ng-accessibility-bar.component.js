@@ -17,6 +17,7 @@
                 fontAdjustMinSize: '<',
                 fontAdjustIncrementRate: '<',
                 libras: '<',
+                showTitle: '<',
                 title: '@',
             }
         };
@@ -54,7 +55,10 @@
                 libras: {
                     visibility: vm.libras !== false
                 },
-                title: vm.title || 'Acessibilidade:'
+                title: {
+                    value: vm.title || 'Acessibilidade:',
+                    visibility: vm.showTitle !== false
+                }
             };
         }
 
@@ -70,7 +74,7 @@
 
         function _switchClass(element, oldClass, newClass) {
             var $element = document.querySelector(element);
-            
+
             if ($element.classList.contains(oldClass)) {
                 $element.classList.remove(oldClass);
             }

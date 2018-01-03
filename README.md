@@ -62,6 +62,7 @@ Make some customizations with attributes
   font-adjust-min-size="12"
   font-adjust-increment-rate="5"
   libras="false"
+  show-title="true"
   title="Accessibility:"
 >
 </ng-accessibility-bar>
@@ -76,6 +77,7 @@ Make some customizations with attributes
 |font-adjust-min-size|Define a custom minimum size for font adjust|integer|16|
 |font-adjust-increment-rate|Define a custom increment rate for font adjust|integer|2|
 |libras|Show and hide buttons for LIBRAS|boolean|true|
+|show-title|Show and hide the title for bar|boolean|true|
 |title|Define a custom title for bar|string|Acessibilidade:|
 
 ## Authors
