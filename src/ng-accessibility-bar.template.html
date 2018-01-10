@@ -2,7 +2,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <symbol id="icon-hand" viewBox="0 0 32 32">
-            <title>hand</title>
+            <title> VLibras </title>
             <path d="M28.593 6.769c0 1.020-0.827 1.846-1.846 1.846s-1.846-0.827-1.846-1.846c0-1.020 0.827-1.846 1.846-1.846s1.846 0.827 1.846 1.846z"></path>
             <path d="M23.67 3.077c0 1.020-0.827 1.846-1.846 1.846s-1.846-0.827-1.846-1.846c0-1.020 0.827-1.846 1.846-1.846s1.846 0.827 1.846 1.846z"></path>
             <path d="M18.747 1.846c0 1.020-0.827 1.846-1.846 1.846s-1.846-0.827-1.846-1.846c0-1.020 0.827-1.846 1.846-1.846s1.846 0.827 1.846 1.846z"></path>
@@ -10,7 +10,7 @@
             <path d="M24.901 6.769v8c0 0.34-0.276 0.615-0.615 0.615s-0.615-0.276-0.615-0.615v-11.692h-3.692v10.462c0 0.34-0.276 0.615-0.615 0.615s-0.615-0.276-0.615-0.615v-11.692h-3.692v11.692c0 0.34-0.276 0.615-0.615 0.615s-0.615-0.276-0.615-0.615v-9.231h-3.692v15.385l-2.492-3.41c-0.738-1.138-2.18-1.52-3.236-0.868-1.052 0.667-1.313 2.122-0.585 3.257 0 0 4.020 6.084 5.733 8.688s4.489 4.641 9.679 4.641c8.593 0 9.362-6.636 9.362-8.615s0-16.615 0-16.615h-3.692z"></path>
         </symbol>
         <symbol id="icon-contrast" viewBox="0 0 32 32">
-            <title>contrast</title>
+            <title> Contraste de cores </title>
             <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM4 16c0-6.627 5.373-12 12-12v24c-6.627 0-12-5.373-12-12z"></path>
         </symbol>
     </defs>
@@ -21,12 +21,12 @@
 
     <div class="list">
         <div class="item" ng-if="vm.config.fontAdjust.visibility">
-            <button class="action" type="button" ng-click="vm.decreaseFontSize()" ng-keypress="vm.decreaseFontSize()">
+            <button class="action" type="button" ng-click="vm.decreaseFontSize()" ng-keypress="vm.decreaseFontSize()" title="Diminuir fonte">
                 A-
             </button>
         </div>
         <div class="item" ng-if="vm.config.fontAdjust.visibility">
-            <button class="action" type="button" ng-click="vm.increaseFontSize()" ng-keypress="vm.increaseFontSize()">
+            <button class="action" type="button" ng-click="vm.increaseFontSize()" ng-keypress="vm.increaseFontSize()" title="Aumentar fonte">
                 A+
             </button>
         </div>
