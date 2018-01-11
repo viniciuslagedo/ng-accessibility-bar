@@ -9,8 +9,11 @@ Accessibility bar component for Angular 1.6
 
 #### Features
 - Buttons to Increment/Decrement font size
+    - On change font size, a new style attribute is add to html tag with font size in px units, also one new helper class is add to body tag base on actual font size. Our tip for that implementation work on your project is make all the css files using rem unit. But also you can use a postcss script called [pxtorem](https://www.npmjs.com/package/pxtorem) for make this transform work for you automatically.
 - Button to toggle high-contrast version based on body class
+    - On toggle high contrast a new class is add to body tag, all work needed is make a new version of your css based on that high contrast class on body.
 - Button to LIBRAS (Língua brasileira de sinais)
+    - Just open VLIBRAS website
 
 ## Quick Start
 

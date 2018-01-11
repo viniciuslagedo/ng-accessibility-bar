@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wza Address Component</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ccc;
+            font-family: Arial;
+        }
+
+        fieldset {
+            border: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 10px;
+            width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        body.color-inverter {
+            background: black;
+            color: white;
+        }
+
+        body.color-inverter .container {
+            background: black;
+        }
+
+        body.color-inverter .container a{
+            color: yellow;
+        }
+
+        body.color-inverter .accessibility-bar-wrapper .text {
+            color: white;
+        }
+
+        body.color-inverter .accessibility-bar-wrapper .list .item .action,
+        body.color-inverter .accessibility-bar-wrapper .list .item .icon {
+            color: yellow;
+            fill: yellow;
+        }
+
+        body.color-inverter .accessibility-bar-wrapper .list .item {
+            border-color: white;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="../dist/ng-accessibility-bar.css">
+</head>
+<body ng-app="app">
+    <div class="container" ng-controller="controller as $ctrl">
+        <ng-accessibility-bar></ng-accessibility-bar>
+    </div>
+    <div class="container">
+        <h2>Features</h2>
+        <br>
+        <h3>Increment/Decrement font size</h3>
+        <p>On change font size a new style attribute is add to html tag with font size in px units, also one new helper class is add to body tag base on actual font size. Our tip for that implementation work on your project is make all the css files using rem unit. But also you can use a postcss script called <a target="_blank" href="https://www.npmjs.com/package/pxtorem">pxtorem</a> for make this transform work for you automatically.</p>
+        <br>
+        <h3>High Contrast</h3>
+        <p>On toggle high contrast a new class is add to body tag, all work needed is make a new version of your css based on that high contrast class on body.</p>
+        <br>
+        <h3>LIBRAS</h3>
+        <p>Just open VLIBRAS website</p>
+    </div>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../dist/ng-accessibility-bar.js"></script>
+    <script>
+        (function() {
+            angular
+                .module('app', [
+                    'ng-accessibility-bar'
+                ]);
+
+            angular
+                .module('app')
+                .controller('controller', ControllerInput);
+
+            function ControllerInput($timeout) {
+                var vm = this;
+            }
+        })();
+    </script>
+</body>
+</html>
