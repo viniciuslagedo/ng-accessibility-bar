@@ -1,35 +1,67 @@
 # Contributing
-This is a default process to contribute to the project
+That is a default process to contribute to the project
 
-### New features or improvements
+### If new features or improvements
 
-1. Create a new branch from develop-branch following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) rules
+1. Fork the repo
+2. Clone your fork
+3. Create a new branch from develop-branch following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) rules
 
 ```bash
 git checkout -b branch-type/name
 ```
 
-2. Commit and Push files
+4. Install
 
-3. Create a new Pull Request to develop-branch
+```bash
+npm install
+```
 
-4. Wait for approbation or new comments about your pull request. We'll be too fast, we swear.
+5. Run
 
-### New hotfixes
+```bash
+gulp
+```
 
-1. Create a new branch from master-branch following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) rules
+6. Make your changes
+
+7. Commit and Push files
+
+8. Create a new Pull Request to that repo develop-branch with a good description
+
+9. Wait for approbation or new comments about your pull request. We'll be too fast, we swear.
+
+### If new hotfixes
+
+
+1. Fork the repo
+2. Clone your fork
+3. Create a new branch from master-branch following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) rules
 
 ```bash
 git checkout -b hotfix/name
 ```
+4. Install
 
-2. Commit and Push files
+```bash
+npm install
+```
 
-3. Create a new Pull Request to master-branch
+5. Run
 
-4. Wait for approbation or new comments about your pull request.
+```bash
+gulp
+```
 
-## Only for contributors
+6. Make your changes
+
+7. Commit and Push files
+
+8. Create a new Pull Request to that repo master-branch with a good description
+
+9. Wait for approbation or new comments about your pull request. We'll be too fast, we swear.
+
+## Only for admins
 
 ### New version/release
 
