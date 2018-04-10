@@ -6,8 +6,7 @@
   "scripts": {
     "build:prod": "gulp build:prod",
     "lint": "./node_modules/.bin/eslint **/*.js",
-    "precommit": "npm run lint",
-    "prepush": "npm test",
+    "prepush": "npm run lint && npm test",
     "test": "gulp test:build",
     "version:major": "npm version major",
     "version:minor": "npm version minor",
