@@ -3,6 +3,7 @@
 [![GitHub release](https://img.shields.io/github/release/viniciuslagedo/ng-accessibility-bar.svg?style=flat-square)](https://github.com/viniciuslagedo/ng-accessibility-bar/releases)
 [![npm](https://img.shields.io/npm/v/ng-accessibility-bar.svg?style=flat-square)](https://www.npmjs.com/package/ng-accessibility-bar)
 [![npm](https://img.shields.io/npm/dt/ng-accessibility-bar.svg?style=flat-square)](https://www.npmjs.com/package/ng-accessibility-bar)
+[![Build Status](https://travis-ci.org/viniciuslagedo/ng-accessibility-bar.svg?branch=master)](https://travis-ci.org/viniciuslagedo/ng-accessibility-bar)
 
 # ng-accessibility-bar
 Accessibility bar component for Angular 1.6
