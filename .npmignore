@@ -1,6 +1,12 @@
+_config.yml
+.csscomb.json
 .dev
+.editorconfig
+.eslintignore
+.eslintrc.js
 .gitignore
 .npmignore
+.travis.yml
 example
 gulp-tasks
 gulpfile.js
