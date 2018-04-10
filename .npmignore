@@ -1,0 +1,12 @@
+.dev
+.gitignore
+.npmignore
+example
+gulp-tasks
+gulpfile.js
+node_modules
+package-lock.json
+src
+tests
+tests.xml
+yarn.lock

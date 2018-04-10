@@ -4,6 +4,7 @@
   "description": "Accessibility bar component with high contrast, font adjust and libras",
   "main": "index.js",
   "scripts": {
+    "build:prod": "gulp build:prod",
     "test": "gulp test:build",
     "lint": "./node_modules/.bin/eslint **/*.js",
     "precommit": "npm run lint",

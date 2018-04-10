@@ -1,1 +1,18 @@
 language: node_js
+node_js:
+- '8'
+cache:
+  directories:
+  - node_modules
+before_script:
+- npm run build:prod
+# after_script:
+# - npm run test
+deploy:
+  provider: npm
+  email: viniciuslagedo@gmail.com
+  api_key:
+    secure: AQXA1Hq3x1vUy6BwEs1YZxGV5sH/71E2WJBnJ+Wjv16OUHcWkO4gBRGfx53zfek9F3ol6mncmH2JGfgGC23E9KEgTM7bFJ9xKhUKbFwVCQX8pQsVuTkA/Vx6Tp8AsSiIuOMKjOFQYNS2wrMCYI6uYVmC84ydJja1/A2dS+Q0yDiFodX9d+RRy5V36ogRY+GwHq2nH4JsILI5VjEoPkhPCUdD6s24dig0HEFhW5ex4iK2yq0LCEaUdoi5PvGTSlHYcjnM0nQxYAeodaP/Ak5Mx6m5Rst4vkSEFonn5GEeliEJjvUUb6hhFZmZ9ZIJr1H2ePY+fxxWyqIcRib7Jir/ZYHzwshwZ8VsVrQ6nQpuanE2Fl83ROxfka2F5t5K+Q6U91PPbgy7QvgQurfuAfrC41W/MBiAZpKpsYj540Q4OYOHXOmKGoUdKdenByRvmhar4ibWVWeXnJ6mc0jm9EZugMaiSVZ2hWOBnTrEsz7JJ7naW6sVfkpfJgsRpuxMrTuVjuHOqM3joeMb0M9hoIQWbQzjWCqF54AgfLcqd585+dISVl1wwJdEPc5oibT83EQyVnd0ZEoJ6Fwoy50CVH8Z5vuPgxMAyvZp17ydcC42f9Bc1gICd/kz2EsomD3zYQHmAErodxEi9mlyWmXmQxEnYwV/StFonMNEO7ZdQ2FbrGk=
+  on:
+    tags: true
+    repo: viniciuslagedo/ng-accessibility-bar
