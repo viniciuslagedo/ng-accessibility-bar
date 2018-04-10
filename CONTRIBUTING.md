@@ -65,25 +65,31 @@ gulp
 
 ### New version/release
 
-1. Create a new branch from develop-branch following [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) and [SEMVER](https://semver.org/) rules
+1. On master branch, with develop updated merge it on master
 
 ```bash
-git checkout -b release/v.X.X.X
+git checkout develop
+git pull origin develop
+git checkout master
+git merge develop
 ```
 
-2. Update the project version property on package.json file
-
-3. Generate a updated distribution using *gulp* command. It's going to be in *dist* directory.
-
+2. Update the project version following [SEMVER](https://semver.org/) rules
 
 ```bash
-gulp build:prod
+//For Patch version
+npm run version:patch
+
+//For Minor version
+npm run version:minor
+
+//For Major version
+npm run version:major
 ```
 
-4. Create a new Pull Request to master-branch
+3. Push on master branch with tags
+```bash
+git push --tags origin master
+```
 
-5. Wait for approbation or new comments about your pull request.
-
-6. After approving, create a new git-tag and release-markup on github and publish whole repository, including the dist folder, on [NPM](https://www.npmjs.com/) services.
-
-7. Then make a merge from master-branch to develop-branch
+4. Travis make the build, publish on npm and github release
