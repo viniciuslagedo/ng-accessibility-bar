@@ -1,6 +1,6 @@
 {
   "name": "ng-accessibility-bar",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Accessibility bar component with high contrast, font adjust and libras",
   "main": "index.js",
   "scripts": {
