@@ -1,6 +1,7 @@
 # dependencies and gulp/build folders
 .dev/
 .hmg/
+dist/
 
 # packages folders
 node_modules/
