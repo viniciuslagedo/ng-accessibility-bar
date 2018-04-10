@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "gulp build:prod",
-    "test": "gulp test:build",
     "lint": "./node_modules/.bin/eslint **/*.js",
     "precommit": "npm run lint",
-    "prepush": "npm test"
+    "prepush": "npm test",
+    "test": "gulp test:build",
+    "version:major": "npm version major",
+    "version:minor": "npm version minor",
+    "version:patch": "npm version patch"
   },
   "repository": {
     "type": "git",
